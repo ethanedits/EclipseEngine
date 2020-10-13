@@ -30,7 +30,6 @@ def doOnTrigger3():
 
 #mainloop
 man = Eclipse.player(200, 410, 60,64,3,False,char,walkLeft,walkRight)
-#man.hitbox() #to change hitbox configurations
 
 watermarkblack = Eclipse.sprite(1040, 650, watermarkImgBlack)
 watermark = Eclipse.sprite(1050, 650, watermarkImg)
