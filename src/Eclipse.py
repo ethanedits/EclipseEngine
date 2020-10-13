@@ -151,7 +151,7 @@ def redrawGameWindow(win,bg,player,sprites = [], colliders = []):
         collider.draw(win)
     for sprite in sprites:
         sprite.draw(win)
-    for text in sprites:
+    for text in sprites: #When Text renderer is added this will be used to draw the text onto the window
         text.draw(win)
     pygame.display.update()
 
