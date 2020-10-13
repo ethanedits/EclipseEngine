@@ -1,6 +1,5 @@
 
 import pygame
-import pygame.freetype
 
 #Player class:
 class player(object):
@@ -145,30 +144,6 @@ class wall(object):
     def playerCollide(self, test_rect):
         return self.rect.colliderect(test_rect) # returns collision with player and wall
 
-#Text class:
-class text(object):
-    def __init__(self,x,y,text, size, r, g, b):
-        self.x = x # sprite x position
-        self.y = y # sprite y position
-        self.text = text
-        self.size = size
-        self.r = r
-        self.g = g
-        self.b = b
-        
-    
-    def draw(self, win):
-        #Drawing
-        print("Draw text/font")
-
-#Particle System Class
-class particle(object):
-    def __init__(self, x, y, width, height):
-        self.x = x # walls x position
-        self.y = y # walls y position
-        self.width = width # walls width
-        self.height = height  # walls height
-
 def redrawGameWindow(win,bg,player,sprites = [], colliders = []):
     win.blit(bg, (-50,-200))
     player.draw(win)
@@ -202,12 +177,7 @@ def setIcon(img):
     programIcon = pygame.image.load(img)
     pygame.display.set_icon(programIcon)
 
-#Make a soundengine class that way you can play and stop a singular sound
 def playSound(sound):
     pygame.mixer.init()
     pygame.mixer.music.load(sound)
     pygame.mixer.music.play()
-
-def stopSound():
-    pygame.mixer.init()
-    pygame.mixer.music.stop()
