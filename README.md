@@ -10,3 +10,5 @@ Eclipse Engine is a 2D, Cross-Platform, Pygame-OpenGL based Game Engine, that ma
 ![Image of Collision System](https://raw.githubusercontent.com/ethanedits/EclipseEngine/main/img/CollisionImage.png)
 
 Above is an image of the collision system with the colliders being drawn as boxes.
+
+This Game Engine is still in development so documentation is limited. Please go into src/Eclipse.py to read the source code and see what functions do what.
